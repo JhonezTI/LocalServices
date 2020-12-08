@@ -1,0 +1,168 @@
+<html lang="pt-br">
+
+<head>
+  <title>Projeto [PROTOTIPO]</title><!-- TITULO -->
+  <link rel="shortcut icon" href="/static/img/icon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="/static/css/estilos.css" rel="stylesheet" >
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+      <img
+        src="/static/img/icon.png"
+        width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+      Marketshop
+    </a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Perfil
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Editar Perfil</a>
+            <a class="dropdown-item" href="#">Favoritos</a>
+            <a class="dropdown-item" href="#">Historico</a>
+            <a class="dropdown-item" href="#">Configuração</a>
+            <a class="dropdown-item" href="#">Privacidade</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" data-toggle="modal" data-target="#Modal1">LogOff</a>
+
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mensagens<span class="badge badge-danger">1</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Notificações <span class="badge badge-danger">1</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="feed.html">Feedback</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Procure por algo" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+<!-- INSERIR NO MAPA -->
+<!-- BOTAO -->
+
+
+
+
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15908.642373645816!2d-37.7751564044989!3d-4.565136997186281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9b1e756001ebb%3A0xf679966fd97abab9!2sAracati%2C%20CE%2C%2062800-000!5e0!3m2!1spt-BR!2sbr!4v1604529649681!5m2!1spt-BR!2sbr"
+    width="100%" height="92%" padding: 100px 0; frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+    tabindex="0">
+  </iframe>
+
+<button type="button" class="buttonmap btn btn" data-toggle="modal" data-target="#Modal2" >
+  <img
+        src="imagens/localizar.png"
+        width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal perfil" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Técnico em informática</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4 ">
+              <img src="/static/img/teste.jpg" class="card-img imagePop" alt="perfil">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Nome completo</h5>
+                <p class="card-text">Conhecimento com Programação</p>
+                <p class="card-text">Manutenção de Computadores</p>
+                <p class="card-text">Manutenção de Smartphones</p>
+                <p class="card-text"><small class="text-muted">Ultima vez online a 30min</small></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="PerfilSegundario.html" class="btn btn-primary">Ver Perfil</a>
+        <button type="button" class="btn btn-primary">Enviar Mensagem</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Deseja fazer log out da sessão do atual?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Tem certeza que deseja sair??
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <a class="btn btn-danger" href="Home.html">Log Out</a>
+    </div>
+  </div>
+</div>
+
+    <!-- POPUP -->
+
+
+
+</body>
+
+</html>

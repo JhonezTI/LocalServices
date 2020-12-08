@@ -1,0 +1,79 @@
+/* GIF LOFI DA TELA DE HOME */
+  .background {
+    background-image: url('/static/img//BackgroundLofi.gif');
+    ;
+  }
+
+  .maintenance {
+    background-image: url('https://www.aguia.usp.br/wp-content/uploads/2020/08/manutencao1.jpg');
+    ;
+  }
+
+  .back {
+    width: 70%;
+    height: 70%;
+  }
+  .back2{
+    background-image: url('/static/img/wallpaper.jpg');
+    width: 50%;
+    height: 50%;
+  }
+  /* FOTO DO PERFIL */
+  .imageedit {
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto ;
+  }
+  .carrocss {
+    width: 70%;
+    height: 70%;
+  }
+
+  .buttonmap{
+    background-image: url('/static/img/localizar.png');
+    position:absolute;
+    z-index:1;
+    top:70%;
+    left:50%;
+    width:auto;               /* largura para o botão */
+    height:auto;              /* altura para o botão */
+    padding:0;
+    margin:-15px 0 0 -30px;   /* margem à esquerda e ao topo metade da medida do botão */
+    border:0 none;
+    border-right: 25px;
+    border-top: 25px;
+}
+
+ /* PERFIL AUTONOMO */
+ .jumbotron{
+  max-height: 70vh;
+}
+
+.back {
+  width: 120%;
+  height: 80%;
+}
+.capa{
+  background-image: url('/static/img/capa.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 85%;
+  width: 120%;
+  height: 80%;
+}
+
+.imagePerfil {
+
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto ;
+  margin-top: auto;
+}
+.imagePop{
+  width: 105%;
+  height: 100%;
+}
+/* GIF LOFI DA TELA DE HOME */
