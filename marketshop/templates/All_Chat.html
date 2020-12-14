@@ -65,57 +65,24 @@
     </div>
   </nav>
 
+<footer class="footer navbar-fixed-bottom">
 
-<!-- INSERIR NO MAPA -->
-
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15908.642373645816!2d-37.7751564044989!3d-4.565136997186281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b9b1e756001ebb%3A0xf679966fd97abab9!2sAracati%2C%20CE%2C%2062800-000!5e0!3m2!1spt-BR!2sbr!4v1604529649681!5m2!1spt-BR!2sbr"
-    width="100%" height="92%" padding: 100px 0; frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-    tabindex="0">
-  </iframe>
-
-<button type="button" class="buttonmap btn btn" data-toggle="modal" data-target="#Modal2" >
-  <img
-        src="/static/img/localizar.png"
-        width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
-</button>
-
-<div class="modal perfil" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Técnico em informática</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row no-gutters">
-            <div class="col-md-4 ">
-              <img src="/static/img/teste.jpg" class="card-img imagePop" alt="perfil">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Nome completo</h5>
-                <p class="card-text">Conhecimento com Programação</p>
-                <p class="card-text">Manutenção de Computadores</p>
-                <p class="card-text">Manutenção de Smartphones</p>
-                <p class="card-text"><small class="text-muted">Ultima vez online a 30min</small></p>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <a href="/Perfil_Autonomo" class="btn btn-primary">Ver Perfil</a>
-       <a href="/Chat" class="btn btn-primary">Enviar mensagem</a>
-      </div>
-    </div>
-  </div>
+<div class="input-group align-self-end">
+  <input  type="text" class="form-control" whidth="" aria-label="Text input with segmented dropdown button" placeholder="Escreva sua mensagem">
+  <button type="button" class="btn btn-success">Enviar Mensagem</button>
+  <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="visually-hidden">Arquivos</span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="#">Imagem</a></li>
+    <li><a class="dropdown-item" href="#">Audio</a></li>
+    <li><a class="dropdown-item" href="#">Localização</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Documento</a></li>
+  </ul>
 </div>
 
-
+</footer
     <!-- POPUP LOGOFF-->
 <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">

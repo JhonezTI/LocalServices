@@ -1,7 +1,7 @@
 <html lang="pt-br">
 
 <head>
-  <title>Projeto [PROTOTIPO]</title><!-- TITULO -->
+  <title>Marketshop</title><!-- TITULO -->
   <link rel="shortcut icon" href="/static/img/icon.png"> <!-- ICONE DA PAGINA -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -17,24 +17,25 @@
 
 <body>
 
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
       aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">
-      <img
-        src="/static/img/icon.png"
-        width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    <a class="navbar-brand" href="/">
+      <img src="/static/img/icon.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
       Marketshop
     </a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+        <input class="btn btn-danger" type="button" value="Voltar" onClick="history.go(-1)">
+    </div>
   </nav>
 
-
+<center>
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col">
 
 
         <h1 class="entry-title"><span>RECUPERAÇÃO DE CONTA</span> </h1>
@@ -51,19 +52,26 @@
               <small>Identifique-se para receber um email com as informações para trocar sua senha. </small>
             </div>
           </div>
-          <pre><a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Enviar</a>                                                                     <a href="Sign_In.html" class="btn btn-danger">Voltar</a>  </pre>
-          <center> <p>@Project_Network</p> </center>
+
+
+          <div class="d-grid gap-2 col-6 mx-auto">
+          <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Enviar</a>
+          </div>
 
         </form>
+
       </div>
     </div>
   </div>
 
+<center>
+          <footer class="footer navbar-fixed-bottom">
+          <center><p>@Project_Network</p> </center>
+          </footer>
 
 
 
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div  class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -76,7 +84,7 @@
           Verifique seu email para efetuar a recuperação de conta!!
         </div>
         <div class="modal-footer">
-          <a class="btn btn-danger" href="Home.html">Ir para pagina Inicial </a>
+          <a class="btn btn-danger" href="/">Ir para pagina Inicial </a>
         </div>
       </div>
     </div>
