@@ -1,51 +1,49 @@
-
 from flask import render_template, session, redirect, url_for, request, current_app as app
 
 from marketshop import db
 from marketshop.entidades import Usuario
 
 
+#----------------------------------PAGINA HOME----------------------------------
+
 @app.route('/')
 @app.route('/home')
 def home_pag():
     return render_template('Home.html')
 
-@app.route('/Sign_Up2')
-def Sign_Up2_pag():
-    return render_template('Sign_Up2.html')
 
-@app.route('/All_Chat')
-def All_Chat_pag():
-    return render_template('All_Chat.html')
+#                                - NavBar Home -
+@app.route('/about')
+def about_pag():
+    return render_template('about.html')
 
-@app.route('/Feedback')
-def feed_pag():
-    return render_template('Feed.html')
-
-@app.route('/Chat')
-def chat_pag():
-    return render_template('Chat.html')
-
-@app.route('/Index')
-def index_pag():
-    return render_template('Index.html')
-
-@app.route('/Perfil_Autonomo')
-def PerfilAUT_pag():
-    return render_template('PerfilSegundario.html')
-
-@app.route('/terms')
-def terms_pag():
-    return render_template('terms.html')
+@app.route('/we_offer')
+def offer_pag():
+    return render_template('we_offer.html')
 
 @app.route('/Security')
 def Security_pag():
     return render_template('security.html')
 
-@app.route('/Recovery')
-def Recovery_pag():
-    return render_template('Recovery.html')
+#@app.route('/Suport')
+#def Suport_pag():
+#   return render_template('suport.html')
 
+@app.route('/Feedback')
+def feed_pag():
+    return render_template('Feed.html')
+
+@app.route('/more')
+def more_pag():
+    return render_template('more.html')
+
+#-------------------------------FIM DA PAGINA HOME------------------------------
+
+
+
+#---------------------------------ROTA DE LOGIN---------------------------------
+
+# - LOGIN -
 @app.route('/Sign_In', methods=['GET', 'POST'])
 def Sign_In():
 #    return render_template('Sign_In.html')
@@ -61,12 +59,24 @@ def Sign_In():
   #      redirect('/Sign_Up.html')
     return render_template('Sign_In.html')
 
+# - RECUPERAÇÃO DE CONTA -
+@app.route('/Recovery')
+def Recovery_pag():
+    return render_template('Recovery.html')
+
+#----------------------------FIM DA ROTA DE LOGIN-------------------------------
 
 
 
+#----------------------------ROTA PARA REGISTRAR--------------------------------
+
+# ESCOLHER A FORMA DE REGISTRO
+@app.route('/Choose_sub')
+def Choose_sub():
+    return render_template('Choose_sub.html')
 
 
-
+#   - PESSOA FISICA -
 @app.route('/Sign_Up')
 def Sign_Up():
 #    nome_c = request.form['n_user']
@@ -92,25 +102,75 @@ def Sign_Up():
     return render_template('Sign_Up.html')
 
 
+#   - PESSOA JURIDICA -
+@app.route('/Sign_Up2')
+def Sign_Up2_pag():
+    return render_template('Sign_Up2.html')
+
+#  - TERMOS DE POLITICA -
+@app.route('/terms')
+def terms_pag():
+    return render_template('terms.html')
+
+#----------------------FIM DA FUNÇÃO REGISTRAR----------------------------------
 
 
 
+#----------------------------FUNÇÃO INDEX---------------------------------------
+
+# - PAGINA INDEX -
+@app.route('/Index')
+def index_pag():
+    return render_template('Index.html')
+
+#                              - NAVBAR -
+
+# - DROPDOWN PERFIL
+#@app.route('/Edit_profile')
+#def Edit_profile_pag():
+#    return render_template('Edit_Profile.html')
+
+#@app.route('/Favorites')
+#def Favorites_pag():
+#    return render_template('Favorites.html')
+
+#@app.route('/Historic')
+#def Historic_pag():
+#    return render_template('Historic.html')
+
+#@app.route('/Config')
+#def Config_pag():
+#    return render_template('Config.html')
+
+# - MENSAGENS
+@app.route('/All_Chat')
+def All_Chat_pag():
+    return render_template('All_Chat.html')
+
+# - NOTIFICAÇÃO
+# FAZER UM BOTÃO DROPDOWN ESTILO FACEBOOK
+
+#----------------------------FUNÇÃO INDEX---------------------------------------
 
 
 
+#-------------------------FUNÇÃO PERFIL AUTONOM---------------------------------
+
+@app.route('/Perfil_Autonomo')
+def PerfilAUT_pag():
+    return render_template('PerfilSegundario.html')
+
+@app.route('/Chat')
+def chat_pag():
+    return render_template('Chat.html')
+
+#----------------------FIM DA FUNÇÃO PERFIL AUTONOMO----------------------------
 
 
 
+#-------------------------LOCAL PARA TESTES-------------------------------------
+@app.route('/teste')
+def test_pag():
+    return render_template('teste.html')
 
 
-@app.route('/Choose_sub')
-def Choose_sub():
-    return render_template('Choose_sub.html')
-
-@app.route('/about')
-def about_pag():
-    return render_template('about.html')
-
-@app.route('/we_offer')
-def offer_pag():
-    return render_template('we_offer.html')
