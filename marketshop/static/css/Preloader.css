@@ -1,0 +1,54 @@
+
+#preloader{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:#FFF;
+	z-index:999;
+	-webkit-transition:all .3s ease;
+	-moz-transition:all .3s ease;
+	transition:all .3s ease;
+}
+.no-js #preloader{
+	display:none;
+}
+#preloader > .loader{
+	position:absolute;
+	top:50%;
+	left:0;
+	right:0;
+	height:92px;
+	width:92px;
+	margin:auto;
+	margin-top:-46px;
+}
+body.loaded #preloader{
+	visibility:hidden;
+	opacity:0;
+}
+
+.owl-controls{
+	margin-top:20px;
+}
+.owl-controls > .owl-dots{
+	font-size:0;
+}
+.owl-controls > .owl-dots > .owl-dot{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	margin-right:8px;
+}
+.owl-controls > .owl-dots > .owl-dot > span{
+	height:4px;
+	width:38px;
+	display:block;
+	background:#C0C0C0;
+	margin:10px 0;
+}
+.owl-controls > .owl-dots > .owl-dot.active > span,
+.owl-controls > .owl-dots > .owl-dot:hover > span{
+	background:#202020;
+}

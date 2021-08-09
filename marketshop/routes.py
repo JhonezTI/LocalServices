@@ -12,6 +12,11 @@ def home_pag():
     return render_template('Home.html')
 
 
+@app.route('/profile')
+def profile_pag():
+    return render_template('profile.html')
+
+
 #                                - NavBar Home -
 @app.route('/about')
 def about_pag():
@@ -36,6 +41,11 @@ def feed_pag():
 @app.route('/more')
 def more_pag():
     return render_template('more.html')
+
+@app.route('/mobile')
+def mobile_pag():
+    return render_template('mobile.html')
+
 
 #-------------------------------FIM DA PAGINA HOME------------------------------
 
@@ -71,13 +81,13 @@ def Recovery_pag():
 #----------------------------ROTA PARA REGISTRAR--------------------------------
 
 # ESCOLHER A FORMA DE REGISTRO
-@app.route('/Choose_sub')
+@app.route('/choose_sub')
 def Choose_sub():
     return render_template('Choose_sub.html')
 
 
 #   - PESSOA FISICA -
-@app.route('/Sign_Up')
+@app.route('/sign_Up')
 def Sign_Up():
 #    nome_c = request.form['n_user']
 #    senha = request.form['pass_user']
@@ -102,7 +112,7 @@ def Sign_Up():
     return render_template('Sign_Up.html')
 
 
-#   - PESSOA JURIDICA -
+#   - Profissional aut -
 @app.route('/Sign_Up2')
 def Sign_Up2_pag():
     return render_template('Sign_Up2.html')
@@ -112,6 +122,9 @@ def Sign_Up2_pag():
 def terms_pag():
     return render_template('terms.html')
 
+@app.route('/registro')
+def reg_pag():
+    return render_template('testeRegister.html')
 #----------------------FIM DA FUNÇÃO REGISTRAR----------------------------------
 
 
@@ -126,9 +139,9 @@ def index_pag():
 #                              - NAVBAR -
 
 # - DROPDOWN PERFIL
-#@app.route('/Edit_profile')
-#def Edit_profile_pag():
-#    return render_template('Edit_Profile.html')
+@app.route('/Edit_profile')
+def Edit_profile_pag():
+    return render_template('Edit_Profile.html')
 
 #@app.route('/Favorites')
 #def Favorites_pag():
@@ -172,5 +185,9 @@ def chat_pag():
 @app.route('/teste')
 def test_pag():
     return render_template('teste.html')
+
+@app.route('/AmbienteTeste')
+def Atest_pag():
+    return render_template('AmbienteTeste.html')
 
 

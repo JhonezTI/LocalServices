@@ -1,4 +1,5 @@
-/* GIF LOFI DA TELA DE HOME */
+/* GIF LOFI DA TELA DE HOME
+*/
   .background {
     background-image: url('/static/img/BackgroundLofi.gif');
     ;
@@ -32,6 +33,7 @@
     margin-left: auto;
     margin-right: auto ;
   }
+
   .carrocss {
     width: 70%;
     height: 70%;
@@ -83,4 +85,12 @@
   height: 100%;
 }
 /* GIF LOFI DA TELA DE HOME */
+footer{
+	padding:35px 0;
+	background:#E7E7E7;
+}
+footer p{
+	color:rgba(0,0,0,.4);
+	margin:0;
+}
 
